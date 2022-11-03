@@ -1,0 +1,101 @@
+// == HERO SECTION == //
+.hero {
+  margin-top: 3.2rem;
+
+  // Content with the Hero image and h1 title
+  &-content {
+    margin-top: 2.4rem;
+
+    &--text {
+      p {
+        margin: 1.6rem 0 2.4rem 0;
+      }
+    }
+
+    .btn {
+      width: 18.5rem;
+      height: 4.8rem;
+      text-align: center;
+      background-color: #f15d51;
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+      letter-spacing: 4.375px;
+      color: #fffdfa;
+    }
+  }
+
+  // Second content with the h2 title
+  &--right {
+    margin-top: 6.4rem;
+  }
+
+  &-new {
+    padding: 2.4rem 2rem 2.4rem 2.1rem;
+    background-color: #00001a;
+
+    &--title {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      font-weight: 700;
+      color: #e9aa52;
+      margin-bottom: 0.4rem;
+    }
+
+    &--content {
+      h3 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        font-weight: 800;
+        color: #fffdfa;
+        margin: 3.1rem 0 0.8rem 0;
+      }
+
+      // To create the border bottom
+      div:not(:last-child) {
+        border-bottom: 1px solid #5e607a;
+
+        p {
+          margin-bottom: 2.9rem;
+        }
+      }
+    }
+  }
+}
+
+// == ARTICLES SECTION == //
+.articles {
+  margin: 6.4rem 0 8rem 0;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &--content {
+    display: flex;
+    align-items: flex-end;
+    gap: 2.4rem;
+
+    img {
+      width: 10rem;
+      height: 12.9rem;
+    }
+
+    &-number {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      font-weight: 700;
+      color: #c5c6ce;
+    }
+
+    &-title {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      font-weight: 800;
+      color: #00001a;
+      margin: 1.2rem 0 0.9rem;
+    }
+  }
+}

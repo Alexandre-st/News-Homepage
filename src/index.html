@@ -4,10 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.scss" />
     <title>News Homepage</title>
   </head>
   <body>
-    <h1>Hello World !!</h1>
+    <header></header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <section class="hero--left">
+            <picture class="hero-images">
+              <source
+                media="(min-width: 1024px )"
+                srcset="../assets/image-web-3-desktop.jpg"
+              />
+              <img src="../assets/image-web-3-mobile.jpg" alt="Image web 3" />
+            </picture>
+            <div class="hero-content">
+              <h1 class="hero-content--title">The Bright Future of Web 3.0?</h1>
+              <div class="hero-content--text">
+                <p class="text text--gray">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button class="btn">READ MORE</button>
+              </div>
+            </div>
+          </section>
+          <section class="hero--right">
+            <div class="hero-new">
+              <h2 class="hero-new--title">New</h2>
+              <div class="hero-new--content">
+                <div>
+                  <h3>Hydrogen VS Electric Cars</h3>
+                  <p class="text text--light-gray">
+                    Will hydrogen-fueled cars ever catch up to EVs?
+                  </p>
+                </div>
+                <div>
+                  <h3>The Downsides of AI Artistry</h3>
+                  <p class="text text--light-gray">
+                    What are the possible adverse effects of on-demand AI image
+                    generation?
+                  </p>
+                </div>
+                <div>
+                  <h3>Is VC Funding Drying Up?</h3>
+                  <p class="text text--light-gray">
+                    Private funding by VC firms is down 50% YOY. We take a look
+                    at what that means.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="articles">
+        <div class="container articles-container">
+          <div class="articles--content">
+            <img
+              src="../assets/image-retro-pcs.jpg"
+              alt="Image showing retro computer to match with the title"
+            />
+            <div class="articles--content--text">
+              <p class="articles--content-number">01</p>
+              <h4 class="articles--content-title">Reviving Retro PCs</h4>
+              <p class="text text--gray">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+          <div class="articles--content">
+            <img
+              src="../assets/image-top-laptops.jpg"
+              alt="Image showing a keyboard to illustrate the title"
+            />
+            <div class="articles--content--text">
+              <p class="articles--content-number">02</p>
+              <h4 class="articles--content-title">Top 10 Laptops of 2022</h4>
+              <p class="text text--gray">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+          <div class="articles--content">
+            <img
+              src="../assets/image-gaming-growth.jpg"
+              alt="Image showing a controller flying to match with the title"
+            />
+            <div class="articles--content--text">
+              <p class="articles--content-number">03</p>
+              <h4 class="articles--content-title">The Growth of Gaming</h4>
+              <p class="text text--gray">
+                How the pandemic has sparked - opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="./app.js"></script>
   </body>

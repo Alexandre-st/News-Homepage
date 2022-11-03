@@ -1,0 +1,30 @@
+:root {
+  font-family: "Inter", sans-serif;
+  font-size: 10px;
+}
+
+.container {
+  width: min(100% - 3.2rem, 111rem);
+  margin-inline: auto;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 800;
+  color: #00001a;
+}
+
+.text {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+
+  &--gray {
+    color: #5e607a;
+  }
+
+  &--light-gray {
+    color: #c5c6ce;
+  }
+}
