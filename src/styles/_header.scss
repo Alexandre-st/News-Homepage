@@ -1,8 +1,14 @@
+@use "./mixins" as *;
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 2.8rem;
+
+  @include mq(laptop) {
+    padding-top: 8.9rem;
+  }
 
   &--logo {
     width: 4.498rem;
@@ -12,6 +18,10 @@
 
 // Mobile menu
 .header-mobile {
+  @include mq(laptop) {
+    display: none;
+  }
+
   .close {
     display: none;
   }
@@ -75,6 +85,31 @@
             margin-bottom: 2.4rem;
           }
         }
+      }
+    }
+  }
+}
+
+// Desktop part
+.header-desktop {
+  display: none;
+
+  @include mq(laptop) {
+    display: block;
+  }
+
+  &-nav {
+    &--list {
+      display: flex;
+      gap: 4rem;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 2.6rem;
+      color: #5e607a;
+
+      li:hover {
+        cursor: pointer;
+        color: #f15d51;
       }
     }
   }
