@@ -1,14 +1,54 @@
+@use "./mixins" as *;
+
 // == HERO SECTION == //
 .hero {
   margin-top: 3.2rem;
+
+  @include mq(laptop) {
+    margin-top: 5.51rem;
+  }
+
+  &--left {
+    @include mq(laptop) {
+      flex: 1;
+    }
+  }
+
+  // For laptop device
+  &--container {
+    @include mq(laptop) {
+      display: flex;
+      gap: 3rem;
+    }
+  }
 
   // Content with the Hero image and h1 title
   &-content {
     margin-top: 2.4rem;
 
+    @include mq(laptop) {
+      margin-top: 2.8rem;
+      display: flex;
+      gap: 3rem;
+    }
+
+    &--title {
+      @include mq(laptop) {
+        font-size: 5.6rem;
+        line-height: 5.6rem;
+        margin-bottom: 0;
+        max-width: 35rem;
+      }
+    }
+
     &--text {
       p {
         margin: 1.6rem 0 2.4rem 0;
+
+        @include mq(laptop) {
+          margin: 0 0 2.9rem 0;
+          max-width: 35rem;
+        }
       }
     }
 
@@ -28,11 +68,21 @@
   // Second content with the h2 title
   &--right {
     margin-top: 6.4rem;
+
+    @include mq(laptop) {
+      margin-top: 0;
+      max-width: 35rem;
+      flex: 2;
+    }
   }
 
   &-new {
     padding: 2.4rem 2rem 2.4rem 2.1rem;
     background-color: #00001a;
+
+    @include mq(laptop) {
+      padding: 3.2rem 2.4rem 3.1rem 2.4rem;
+    }
 
     &--title {
       font-size: 3.2rem;
@@ -67,10 +117,19 @@
 .articles {
   margin: 6.4rem 0 8rem 0;
 
+  @include mq(laptop) {
+    margin: 7.1rem 0 12.9rem 0;
+  }
+
   &-container {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+
+    @include mq(laptop) {
+      flex-direction: row;
+      gap: 3rem;
+    }
   }
 
   &--content {

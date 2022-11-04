@@ -1,6 +1,7 @@
 // == BASE == //
 @use "./base/reset";
 @use "./base/base";
+@use "./mixins";
 
 // == LAYOUTS == //
 @use "./header";
